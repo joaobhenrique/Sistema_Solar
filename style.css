@@ -6,12 +6,13 @@ body {
   justify-content: center;
   background-color: black;
   overflow: hidden;
+  zoom: 0.7;
 }
 
 .container {
   font-size: 10px;
   width: 40em;
-  height: 40em;
+  height: 10em;
   position: relative;
 }
 
@@ -90,12 +91,22 @@ body {
   animation: orbit 13s linear infinite;
 }
 
+.saturno {
+  top: -23em;
+  left: -23em;
+  width: 85em;
+  height: 85em;
+  animation: orbit 15s linear infinite;
+}
+
 .terra::before,
 .lua::before,
 .marte::before,
 .mercurio::before,
 .venus::before,
-.jupiter::before {
+.jupiter::before,
+.saturno::before,
+.anel::before {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -109,10 +120,10 @@ body {
 }
 
 .venus::before {
-  top: 3em;
+  top: 3.5em;
   right: 1em;
-  width: 4em;
-  height: 4em;
+  width: 3.5em;
+  height: 3.5em;
   background-color: #9a5222;
 }
 
@@ -146,6 +157,22 @@ body {
   width: 5em;
   height: 5em;
   background-color: #e16549;
+}
+
+.saturno::before {
+  top: 12em;
+  right: 5.7rem;
+  width: 4em;
+  height: 4em;
+  background-color: #a5916c;
+}
+
+.anel::before {
+  top: 13.5em;
+  right: 3.9rem;
+  width: 10em;
+  height: 1em;
+  background-color: #50493c;
 }
 
 @keyframes orbit {
