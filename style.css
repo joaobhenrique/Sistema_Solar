@@ -75,10 +75,10 @@ body {
 }
 
 .marte {
-  top: -5em;
-  left: -4.8em;
-  width: 50em;
-  height: 50em;
+  top: -6em;
+  left: -6.3em;
+  width: 52em;
+  height: 52em;
   animation: orbit 11s linear infinite;
 }
 
